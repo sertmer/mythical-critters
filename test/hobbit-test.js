@@ -50,7 +50,7 @@ describe('Hobbit', function() {
     assert.equal(hobbit.adult, false);
   });
 
-  it.skip('should be considered an adult at 33', function() {
+  it('should be considered an adult at 33', function() {
     var hobbit = new Hobbit('Taylor');
     timeTravel(33, hobbit);
     assert.equal(hobbit.age, 33);
