@@ -3,7 +3,7 @@ var Pirate = require('../exercises/pirate');
 
 describe('Pirate', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Pirate);
   });
 
