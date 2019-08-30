@@ -3,9 +3,9 @@ class Pirate {
     this.name = name;
     this.job = job || "Scallywag";
     this.cursed = false;
-    this.counter = 0
+    this.counter = 0;
     this.yar = false;
-    // this.robShip() = "YAARRR!";
+    this.booty = 0;
   }
   commitHeinousAct() {
     this.counter++;
@@ -14,7 +14,8 @@ class Pirate {
     }
   }
   robShip() {
-
+    this.booty = 100;
+    return('YAARRR!')
   }
 }
 
