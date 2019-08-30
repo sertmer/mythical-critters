@@ -69,3 +69,4 @@ describe('Wizard', function() {
     assert.equal(wizard.cast(), 'I SHALL NOT CAST');
     });
 });
+// nice!
