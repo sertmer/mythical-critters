@@ -6,7 +6,7 @@ class Medusa {
   stare(victim) {
     this.statues.push(victim);
     console.log(victim);
-    victim.isStoned = true;
+    victim.stoned = true;
     if (this.statues.length > 3) {
       this.statues = this.statues.slice(0, 3);
     }

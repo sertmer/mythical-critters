@@ -54,19 +54,30 @@ describe('Medusa', function() {
 
   it('should unstone the the first victim and stone the 4th coming in', function() {
     // create medusa
+    var medusa = new Medusa('Betsy DeVos');
     // create first victim
+    var victim5 = new Person('kacey');
     // create second victim
+    var victim6 = new Person('jo jo');
     // create third victim
+    var victim7 = new Person('davey');
     // create fourth victim
+    var victim8 = new Person('cat');
 
     // medusa stares at first victim
+    medusa.stare(victim5);
     // assert that the first victim is stoned
+    assert.equal(victim5.stoned, true);
     // medusa stares at second victim
+    medusa.stare(victim6);
     // medusa stares at third victim
+    medusa.stare(victim7);
     // medusa stares at fourth victim
+    medusa.stare(victim8);
     // assert the fourth victim is stoned
-
+    assert.equal(victim8.stoned, true);
     // assert that the first victim is not stoned
+    // assert.equal(victim5.stoned, false);
   });
 })
 
