@@ -77,7 +77,7 @@ describe('Medusa', function() {
     // assert the fourth victim is stoned
     assert.equal(victim8.stoned, true);
     // assert that the first victim is not stoned
-    // assert.equal(victim5.stoned, false);
+    assert.equal(victim5.stoned, false);
   });
 })
 
