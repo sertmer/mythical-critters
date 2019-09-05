@@ -12,6 +12,8 @@ class Centaur {
     if (this.counter > 2) {
       this.cranky = true;
       return ('NO!');
+    } if (this.layingDown === true) {
+      return ('NO!')
     }
     console.log(this.counter);
     return ('Twang!!!');
@@ -20,13 +22,17 @@ class Centaur {
     this.counter++;
     if (this.counter > 2) {
       this.cranky = true;
+    } if (this.layingDown === true) {
+      return('NO!')
     }
     console.log(this.counter)
     return ('Clop clop clop clop!!!');
   }
   sleep() {
-    if (this.standing = true) {
+    if (this.standing === true) {
       return('NO!');
+    } if (this.layingDown === true) {
+        return ('ZZZZ');
     }
   }
   layDown() {
