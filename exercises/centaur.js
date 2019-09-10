@@ -13,7 +13,7 @@ class Centaur {
       this.cranky = true;
       return ('NO!');
     } if (this.layingDown === true) {
-      return ('NO!')
+      return ('NO!');
     }
     console.log(this.counter);
     return ('Twang!!!');
@@ -32,8 +32,10 @@ class Centaur {
     if (this.standing === true) {
       return('NO!');
     } if (this.layingDown === true) {
+        this.cranky = false;
+        this.counter = 0;
         return ('ZZZZ');
-    }
+    } this.cranky = false;
   }
   layDown() {
     this.standing = false;
@@ -42,7 +44,19 @@ class Centaur {
   standUp() {
     this.standing = true;
     this.layingDown = false;
+    console.log(this.standing)
+  }
+  drinkPotion() {
+    if (this.cranky === true) {
+      this.cranky = false;
+    } console.log(this.cranky);
+    if (this.layingDown === true) {
+      return ('Not while I\'m laying down!')
+    } else if (this.counter < 3) {
+      this.cranky = true;
+    }
   }
 }
+
 
 module.exports = Centaur;
